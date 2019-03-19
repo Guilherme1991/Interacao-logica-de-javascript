@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uso do window confirm</title>
+</head>
+<body>
+    <script>
+        let confirma = window.confirm("Tem certeza que quer sair?");
+        if(confirma == true){
+            window.open("true.html"); 
+            document.write("Boaa meu Jovem!");
+        }else{
+            window.open("sair.html", "Não foi possível efetuar sua solicitação!");
+            document.write("Você fechou a janela ou apertou o botão cancelar, Isso resulta em valor Booleano!");
+        }
+    </script>
+</body>
+</html>
